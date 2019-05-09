@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SqlViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    List the Bits
+</div>
+
+
+@foreach (var item in Model)
+{
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.AllowedUsers)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CreatedByUser)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CreatedDateTime)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ExactAllowedPermissionLevel)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ExcludedEnvironments)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LastModifiedByuser)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LastModifiedDateTime)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MinimumAllowedPermissionLevel)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OnOff)
+    </td>
+</tr>
+}

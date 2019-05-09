@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>39ac9d04-922f-48de-8376-7fee377d128b</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="dotnet-fbit" Version="0.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FeatureBits.Core">
+      <HintPath>..\featurebits\src\FeatureBits.Core\bin\Debug\netstandard2.0\FeatureBits.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FeatureBits.Data">
+      <HintPath>..\featurebits\src\FeatureBits.Core\bin\Debug\netstandard2.0\FeatureBits.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
