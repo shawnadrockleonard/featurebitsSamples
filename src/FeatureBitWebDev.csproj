@@ -17,10 +17,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FeatureBits.Core">
-      <HintPath>..\featurebits\src\FeatureBits.Core\bin\Debug\netstandard2.0\FeatureBits.Core.dll</HintPath>
+      <HintPath>..\..\featurebits\src\FeatureBits.Core\bin\Debug\netstandard2.0\FeatureBits.Core.dll</HintPath>
     </Reference>
     <Reference Include="FeatureBits.Data">
-      <HintPath>..\featurebits\src\FeatureBits.Core\bin\Debug\netstandard2.0\FeatureBits.Data.dll</HintPath>
+      <HintPath>..\..\featurebits\src\FeatureBits.Core\bin\Debug\netstandard2.0\FeatureBits.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
