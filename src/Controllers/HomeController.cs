@@ -46,7 +46,8 @@ namespace FeatureBitWebDev.Controllers
                 LastModifiedDateTime = bitt.LastModifiedDateTime,
                 MinimumAllowedPermissionLevel = bitt.MinimumAllowedPermissionLevel,
                 Name = bitt.Name,
-                OnOff = bitt.OnOff
+                OnOff = bitt.OnOff,
+                Dependencies = bitt.Dependencies
             });
 
             return View(transformedBits);

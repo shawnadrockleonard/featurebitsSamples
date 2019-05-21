@@ -22,7 +22,6 @@ namespace FeatureBitWebDev
         private const string FeatureBitsDbConnectionStringKey = "FeatureBitsDbContext";
         private const string FeatureBitsCloudStorageConnectionStringKey = "FeatureBitsAzureTableStorage";
         private IHostingEnvironment EnvironmentHost { get; }
-
         public IConfiguration Configuration { get; }
 
         public Startup(IHostingEnvironment environment)
@@ -78,7 +77,7 @@ namespace FeatureBitWebDev
 
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

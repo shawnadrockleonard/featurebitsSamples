@@ -7,10 +7,30 @@
     List the Bits
 </div>
 
-
-@foreach (var item in Model)
-{
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Allowed</th>
+        <th>Created By</th>
+        <th>Created</th>
+        <th>Exact</th>
+        <th>Excluded</th>
+        <th>Modified By</th>
+        <th>Modified</th>
+        <th>Minimum</th>
+        <th>OnOff</th>
+        <th>Dependencies</th>
+    </tr>
+    @foreach (var item in Model)
+    {
 <tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
     <td>
         @Html.DisplayFor(modelItem => item.AllowedUsers)
     </td>
@@ -27,9 +47,6 @@
         @Html.DisplayFor(modelItem => item.ExcludedEnvironments)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.Id)
-    </td>
-    <td>
         @Html.DisplayFor(modelItem => item.LastModifiedByuser)
     </td>
     <td>
@@ -39,10 +56,11 @@
         @Html.DisplayFor(modelItem => item.MinimumAllowedPermissionLevel)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.Name)
-    </td>
-    <td>
         @Html.DisplayFor(modelItem => item.OnOff)
     </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Dependencies)
+    </td>
 </tr>
-}
+    }
+</table>

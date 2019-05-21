@@ -24,5 +24,6 @@ namespace FeatureBitWebDev.Models
         public string Name { get; set; }
         public bool OnOff { get; set; }
         public int? ExactAllowedPermissionLevel { get; set; }
+        public string Dependencies { get; internal set; }
     }
 }
